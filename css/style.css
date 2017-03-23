@@ -246,18 +246,43 @@ Copyright 2013, Josh Cope
         display: inline-block;
         border: 1px solid transparent;
         border-radius: 2px;
-        background-color: darkslategrey;
-        color: black;
+        background-color: darkkhaki;
+        color: white;
         border: none;
         text-align: center;
     }
 
     #submit_button:hover {
-        color: white;
+        color: #333;
         background-color: #e6e6e6;
         border-color: #adadad;
     }
-/* =============================================================================
+/*-----Footer styles-----*/
+    footer {
+        width: 100%;
+        height: 96px;
+/*        background-color: #efe2d2;*/
+        margin: 0 auto;
+        line-height: 60px;
+    }
+    #links {
+        text-align: center;
+        padding-top: 2%;
+    }
+    footer a {
+/*        padding-top = 10px;*/
+        margin-left: 12px;
+        margin-right: 5px;
+        margin-top: 5px;
+        text-align: center;
+        color: black;
+        text-decoration: none;
+    }
+    a:hover {
+        color: white;
+    }
+/*
+=============================================================================
    Page Styles
    ========================================================================== */
 
