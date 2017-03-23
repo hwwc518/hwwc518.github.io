@@ -32,9 +32,9 @@
     <h1>Hui Wah Chiang</h1>
         <nav>
            <ul>
-              <li><a href = "index.html" class = "active">Home</a></li>
-              <li><a href = "#Projects">Portfolio</a></li>
-              <li><a href = "Contact.html">Contact</a></li>
+              <li><a href = "#Home" class = "smoothScroll">Home</a></li>
+              <li><a href = "#Projects" class = "smoothScroll">Portfolio</a></li>
+              <li><a href = "#Contact" class = "smoothScroll">Contact</a></li>
            </ul>
         </nav>
     </header>
@@ -52,10 +52,11 @@
         
 -->
 <!-----About Page----->
+       <a id = "Home"></a>
         <div class = "Homepage">
             <div class = "img-container">
                 <figure>
-                    <img src = "https://image.flaticon.com/icons/svg/307/307915.svg">
+                    <img id = "coder_image" src = "https://image.flaticon.com/icons/svg/307/307915.svg">
 <!--                    <figcaption>Temporary Placeholder Image</figcaption>-->
                 </figure>
             </div>
@@ -69,13 +70,14 @@
                 <h3>
                     Skills:
                 </h3>
-                <ul>
-                    <li>Python: 3/5</li>
-                    <li>C++: 3.5/5</li>
-                    <li>HTML/CSS: 4/5</li>
-                    <li>Javascript: 2/5</li>
-                    <li>Photoshop: 3/5</li>
-                    <li>Cantonese/ Mandarin: 3.5/5</li>
+                <ul id = "skills_list">
+                    <li>Python: 3 / 5</li>
+                    <li>C++: 3.5 / 5</li>
+                    <li>HTML/CSS: 4 / 5</li>
+                    <li>Javascript: 2 / 5</li>
+                    <li>Git/Github: 3 / 5</li>
+                    <li>Photoshop: 3 / 5</li>
+                    <li>Cantonese/ Mandarin: 3.5 / 5</li>
                 </ul>
             </div>
         </div>
@@ -85,15 +87,20 @@
                <h4>
                    Projects:
                </h4>
-               <h5>
-                   Facebook Messenger chat-bot
-               </h5>
-               <h6>Javascript, Node.js, Wit.ai</h6>
-               <p2>
-                   Created a chat based ‘therapy’ bot in the form of a text-based game to aid in identifying  depression symptoms by assigning a user’s actions in the game a positive / negative rating with Wit.ai. Users were then given advice to treat those symptoms.
-               </p2>
                <figure>
-               <img src = "http://media.sproutsocial.com/uploads/2016/08/Facebook-Messenger-Bot-01.png">
+               <img id = "chatbot_image" src = "http://media.sproutsocial.com/uploads/2016/08/Facebook-Messenger-Bot-01.png">
+                </figure>
+                <div class = "Description_1">
+                    <h5>
+                       Facebook Messenger chat-bot
+                   </h5>
+                   <h6>Javascript, Node.js, Wit.ai</h6>
+                   <p2>
+                       Created a chat based ‘therapy’ bot in the form of a text-based game to aid in identifying  depression symptoms by assigning a user’s actions in the game a positive / negative rating with Wit.ai. Users were then given advice to treat those symptoms.
+                   </p2>
+               </div>
+                <figure>
+                     <img id = "cybersecurity_image" src = "https://www.mozilla.org/media/img/teach/smarton/security/hero-cybersecurity-white-bg.73b13ad71673.png">
                 </figure>
                 <h7>
                     Cyber-Security Projects 
@@ -106,11 +113,10 @@
                     subnet. It would then scan the given network to find open ports, then compare those
                     ports to a dictionary of common ports to predict which one was being used. 3) Make a file recovery program that would use bits of a jpg/ png image's header in order to recover the file. Link to the program in action.
                 </p3>
-                <figure>
-                     <img src = "https://www.mozilla.org/media/img/teach/smarton/security/hero-cybersecurity-white-bg.73b13ad71673.png">
-                </figure>
             </div>
 <!--Chatbot link: m.me/250497208717066-->
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/smoothscroll.js"></script>
 </body>
 </html>

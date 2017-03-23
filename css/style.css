@@ -70,7 +70,6 @@ Copyright 2013, Josh Cope
     }
     nav a.active{
         color: #717c8c;
-  
     }
 
 /*-----Hero Image CSS-----*/
@@ -112,11 +111,11 @@ Copyright 2013, Josh Cope
 
 
 /*-----About Me Section-----*/
-    main .homepage{
-        padding-top: 100px;
+    .Homepage{
+        padding-top: 10%;
 /*        width:90%;*/
     }
-    figure img{
+    #coder_image{
         width:30%;
         height: auto;
         float: left;
@@ -127,15 +126,17 @@ Copyright 2013, Josh Cope
     h3{
         font-size: 1.5em;
     }
+/*
     .About-me{
-/*        float: right;*/
-/*        display:inline-block;*/
+        float: right;
+        display:inline-block;
         padding-top:10px;
         padding-left: 10px;
         padding-right: 60px;
     }
+*/
 /*
-    .About-me ul{
+    #skills_list{
        padding-left: 50px;
     }
 */
@@ -146,12 +147,44 @@ Copyright 2013, Josh Cope
     }
 */
     .Portfolio{
-        padding-top: 30%;
-        background-color: antiquewhite;
+        padding-top: 20%;
+        background-color: black;
     }
-    Projects h4{
-        font size: 2em;
+    h4{
+        font-size: 2em;
+        padding-top:2%;
+        padding-left: 7%;
     }
+    #chatbot_image{
+        width: 25%;
+        float: left;
+        padding-left: 5%;
+        padding-right: 10%;
+    }
+    h5{
+        font-size: 1.5em;
+    }
+    h6{
+        font-size: 1em;
+    }
+/*
+    .Description_1{
+        padding-left: 10%;
+    }
+*/
+/*    clear: both;*/
+    #cybersecurity_image{
+        width:20%;
+        float:left;
+        padding-left: 5%;
+        padding-right: 15%;
+    }
+h7{
+    font-size: 1.5em;
+}
+h8{
+    font-size: 1em;
+}
 
 /* =============================================================================
    Page Styles
