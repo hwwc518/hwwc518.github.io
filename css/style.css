@@ -242,10 +242,14 @@ Copyright 2013, Josh Cope
         padding-left: 5%;
         font-size: 1.5em;
     }
+    .input{
+        border-radius: 4px;
+    }
     #submit_button {
         display: inline-block;
         border: 1px solid transparent;
         border-radius: 2px;
+        width:8%;
         background-color: darkkhaki;
         color: white;
         border: none;
@@ -271,7 +275,7 @@ Copyright 2013, Josh Cope
     }
     footer a {
 /*        padding-top = 10px;*/
-        margin-left: 12px;
+        margin-left: 15px;
         margin-right: 5px;
         margin-top: 5px;
         text-align: center;
