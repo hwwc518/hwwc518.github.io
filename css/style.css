@@ -40,7 +40,6 @@ Copyright 2013, Josh Cope
 /*        position: absolute;*/
         float: right;
         display: inline-block;
-/*        overflow: hidden;*/
     }
     nav ul{
         list-style: none;
@@ -49,6 +48,8 @@ Copyright 2013, Josh Cope
         margin: 0;
         text-align: center;
         background-color: #efe2d2;
+        outline: none;
+        border: none;
     }
     nav ul li{
         display: inline-block;
@@ -63,14 +64,18 @@ Copyright 2013, Josh Cope
         color: black;
         display: block;
         background-color: #efe2d2;
-        transition: 1s background color;
+        outline: none;
+        border: none;
+/*        transition: 1s background color;*/
     }
     nav a: hover{
-        background-color: black;
+        color: #717c8c;
     }
+/*
     nav a.active{
         color: #717c8c;
     }
+*/
 
 /*-----Hero Image CSS-----*/
 /*
@@ -113,6 +118,7 @@ Copyright 2013, Josh Cope
 /*-----About Me Section-----*/
     .Homepage{
         padding-top: 10%;
+/*        background-color: #fcf4ea;*/
 /*        width:90%;*/
     }
     #coder_image{
@@ -121,34 +127,37 @@ Copyright 2013, Josh Cope
         float: left;
         padding-left: 140px;
         margin-right: 100px;
-/*        display:inline-block;*/
     }
     h3{
         font-size: 1.5em;
     }
-/*
-    .About-me{
-        float: right;
-        display:inline-block;
-        padding-top:10px;
-        padding-left: 10px;
-        padding-right: 60px;
-    }
-*/
-/*
-    #skills_list{
-       padding-left: 50px;
-    }
-*/
     clear: both;
 /*
     main p1{
         margin-right: 100px;
     }
 */
+    
     .Portfolio{
         padding-top: 20%;
         background-color: black;
+    }
+    /*Generic Clearfix*/
+
+    .clear-fix:after {
+        content: '';
+        display: block;
+        clear: both;
+        height: 0;
+        font-size: 0;
+        visibility: hidden;
+    }
+    
+    .thumbnail {
+        vertical-align: top;
+        margin: 2%;
+        display: block;
+        font-size: 20px;
     }
     h4{
         font-size: 2em;
@@ -157,35 +166,97 @@ Copyright 2013, Josh Cope
     }
     #chatbot_image{
         width: 25%;
+        height: auto;
         float: left;
+        padding-top: 2%;
         padding-left: 5%;
         padding-right: 10%;
     }
     h5{
         font-size: 1.5em;
+        margin: 0;
+    }
+    h5 a{
+        color:black;
+        text-decoration: none;
+    }
+    h5 a:hover{
+        color: bisque;
     }
     h6{
         font-size: 1em;
+        margin: 1%;
+        
     }
-/*
-    .Description_1{
-        padding-left: 10%;
+    #chatbot_description{
+        padding-right: 10%;
     }
-*/
+/*Why doesn't the bottom clear work?(Had to do clear left in the image. Hacky hardcode solution.)*/
 /*    clear: both;*/
+
     #cybersecurity_image{
-        width:20%;
+        clear:left;
         float:left;
+        width:20%;
+        padding-top: 2%;
         padding-left: 5%;
         padding-right: 15%;
     }
-h7{
-    font-size: 1.5em;
-}
-h8{
-    font-size: 1em;
-}
+    .Description_2{
+        padding-top: 1%;
+        
+    }
+    h7{
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+    h7 a{
+        color:black;
+        text-decoration: none;
+    }
+    h7 a:hover{
+        color: bisque;
+    }
+    h8{
+        font-size: 1em;
+        font-weight:600;
+    }
+    clear: both;
 
+/*-----Contact page styles-----*/
+    .Contact_page{
+/*        padding-top: 1%;*/
+    }
+    #contact-form{
+        padding-left: 5%;
+    }
+    h9{
+        padding-left: 5%;
+        font-weight: 600;
+        font-size: 2em;
+/*
+        padding-top:2%;
+*/
+    }
+    h10{
+        padding-left: 5%;
+        font-size: 1.5em;
+    }
+    #submit_button {
+        display: inline-block;
+        border: 1px solid transparent;
+        border-radius: 2px;
+        background-color: darkslategrey;
+        color: black;
+        border: none;
+        text-align: center;
+    }
+
+    #submit_button:hover {
+        color: white;
+        background-color: #e6e6e6;
+        border-color: #adadad;
+    }
 /* =============================================================================
    Page Styles
    ========================================================================== */

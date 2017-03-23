@@ -11,6 +11,7 @@
     <link rel = "stylesheet" href = "css/base.css">
     <link rel="stylesheet" href = "css/grid.css">
 	<link rel="stylesheet" href = "css/style.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
 <!--
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -38,7 +39,7 @@
            </ul>
         </nav>
     </header>
-    <main>
+  <main>
 <!-----Hero image----->
 <!--
         <section class = "hero-image">
@@ -80,6 +81,7 @@
                     <li>Cantonese/ Mandarin: 3.5 / 5</li>
                 </ul>
             </div>
+            
         </div>
 <!-----Projects----->
         <a id = "Projects"></a>
@@ -87,35 +89,69 @@
                <h4>
                    Projects:
                </h4>
+               <div class = "thumbnail">
                <figure>
                <img id = "chatbot_image" src = "http://media.sproutsocial.com/uploads/2016/08/Facebook-Messenger-Bot-01.png">
                 </figure>
                 <div class = "Description_1">
-                    <h5>
-                       Facebook Messenger chat-bot
+                    <h5><a href="m.me/250497208717066" target="_blank">
+                        Facebook Messenger chat-bot </a>
                    </h5>
                    <h6>Javascript, Node.js, Wit.ai</h6>
-                   <p2>
-                       Created a chat based ‘therapy’ bot in the form of a text-based game to aid in identifying  depression symptoms by assigning a user’s actions in the game a positive / negative rating with Wit.ai. Users were then given advice to treat those symptoms.
-                   </p2>
+                       <p2>
+                          <div id = "chatbot_description"> Created a chat based ‘therapy’ bot in the form of a text-based game to aid in identifying  depression symptoms by assigning a user’s actions in the game a positive / negative rating with Wit.ai. Users were then given advice to treat those symptoms.
+                          </div>
+                       </p2>
+                 </div>
                </div>
+               <div class = "thumbnail">
                 <figure>
                      <img id = "cybersecurity_image" src = "https://www.mozilla.org/media/img/teach/smarton/security/hero-cybersecurity-white-bg.73b13ad71673.png">
                 </figure>
-                <h7>
-                    Cyber-Security Projects 
-                </h7>
-                <h8>
-                    Python 
-                </h8>
-                <p3>
-                    CS 1122(Introduction to Computer Science Final Project). Used various Python modules to 1) Make a Windows tool that would log keystrokes to a '.txt' file. That '.txt' file was then sent over a network to a remote server. 2) Make a tool that would scan other computers on the same
-                    subnet. It would then scan the given network to find open ports, then compare those
-                    ports to a dictionary of common ports to predict which one was being used. 3) Make a file recovery program that would use bits of a jpg/ png image's header in order to recover the file. Link to the program in action.
-                </p3>
+                <div class = "Description_2">
+                    <h7> <a href="https://github.com/hwwc518/CS-1122-Projects" target="_blank">
+                        Cyber-Security Projects </a>
+                    </h7>
+                    <br>
+                    <h8>
+                        Python 
+                    </h8>
+                    <br>
+                    <p3>
+                        CS 1122(Introduction to Computer Science Final Project). Used various Python modules to 1) Make a Windows tool that would log keystrokes to a '.txt' file. That '.txt' file was then sent over a network to a remote server. 2) Make a tool that would scan a given network to find open ports, then compare those
+                        ports to a dictionary of common ports to predict which one was being used. 3) Make a file recovery program that would use bits of a jpg/ png image's header in order to recover the file. 
+                    </p3>
+                  </div>
+                </div>
             </div>
-<!--Chatbot link: m.me/250497208717066-->
-    </main>
+<!-----Contact----->
+     <a id = "Contact"></a>
+     <div class = "Contact_page">
+         <h9>Contact Me!</h9>
+         <br>
+         <br>
+         <h10>Feel free to send me any questions you may have.</h10>
+         <br>
+         <br>
+        <!-----Contact boxes----->
+         <form id="contact-form" action='/' method="post">
+           <div class="contact-input">
+              <input id="name" class="input" name="name" type="text" value="" size="30" maxlength="30" placeholder="Name"/>
+           </div>
+           <br>
+           <div class="contact-input">
+              <input id="email" class="input" name="email" type="text" value="" size="30" maxlength="35" placeholder="Your Email"/>
+           </div>
+           <br>
+           <div class="contact-input">
+              <textarea id="message" class="input" name="message" rows="10" cols="50" placeholder="Enter your message"></textarea>
+           </div>
+            <br>
+           <button id="submit_button" onClick="formSent()" type="submit" value="Send">Send</button>
+        </form>	
+
+     </div>
+      </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="javascript/smoothscroll.js"></script>
 </body>
