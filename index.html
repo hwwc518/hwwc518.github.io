@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Personal_Website</title>
-    <meta name = "description" content = "Hui Wah Chiang's Personal Website">
-    <meta name = "author" content = "Hui Wah Chiang">
-    <meta name = "viewport" content = "width=device-width">
+    <meta name="description" content="Hui Wah Chiang's Personal Website">
+    <meta name="author" content="Hui Wah Chiang">
+    <meta name="viewport" content="width=device-width">
 
-    <link rel = "stylesheet" href = "css/normalize.css">
-    <link rel = "stylesheet" href = "css/base.css">
-    <link rel="stylesheet" href = "css/grid.css">
-	<link rel="stylesheet" href = "css/style.css">
-	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
-<!--
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    
+<!--    Mobile header colors-->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#4285f4">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#4285f4">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#4285f4">
+    <!--
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
    
 -->
-<!--
+    <!--
    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,500,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//storage.googleapis.com/code.getmdl.io/1.0.1/material.teal-red.min.css" />
     <script src="//storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"></script>
 -->
     <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
-    
+
 </head>
+
 <body>
-   <header>
-    <h1>Hui Wah Chiang</h1>
+    <header>
+        <h1>Hui Wah Chiang</h1>
         <nav>
-           <ul>
-              <li><a href = "#Home" class = "smoothScroll">Home</a></li>
-              <li><a href = "#Projects" class = "smoothScroll">Portfolio</a></li>
-              <li><a href = "#Contact" class = "smoothScroll">Contact</a></li>
-           </ul>
+            <ul>
+                <li><a href="#Home" class="smoothScroll">Home</a></li>
+                <li><a href="#Projects" class="smoothScroll">Portfolio</a></li>
+                <li><a href="#Contact" class="smoothScroll">Contact</a></li>
+            </ul>
         </nav>
     </header>
-  <main>
-<!-----Hero image----->
-<!--
+    <main>
+        <!-----Hero image----->
+        <!--
         <section class = "hero-image">
             <div class = "hero-text">
                 <h1>Hui Wah Chiang</h1>
@@ -52,18 +62,18 @@
         </section>
         
 -->
-<!-----About Page----->
-       <a id = "Home"></a>
-        <div class = "Homepage">
-            <div class = "img-container">
+        <!-----About Page----->
+        <a id="Home"></a>
+        <div class="Homepage">
+            <div class="img-container">
                 <figure>
-                    <img id = "coder_image" src = "https://image.flaticon.com/icons/svg/307/307915.svg">
-<!--                    <figcaption>Temporary Placeholder Image</figcaption>-->
+                    <img id="coder_image" src="https://image.flaticon.com/icons/svg/307/307915.svg">
+                    <!--                    <figcaption>Temporary Placeholder Image</figcaption>-->
                 </figure>
             </div>
-            <div class = "About-me">
+            <div class="About-me">
                 <h2>
-                   Greetings!
+                    Greetings!
                 </h2>
                 <p1>
                     My name is Hui Wah. I am currently a sophomore CS major at NYU interested in mobile and web development. I’m very interested in the internet of things and ways in which technology can be infused into normal objects to make them more useful. In my free time, I love traveling, basketball, tinkering with gadgets and exploring new places.
@@ -71,7 +81,7 @@
                 <h3>
                     Skills:
                 </h3>
-                <ul id = "skills_list">
+                <ul id="skills_list">
                     <li>Python: 3 / 5</li>
                     <li>C++: 3.5 / 5</li>
                     <li>HTML/CSS: 4 / 5</li>
@@ -81,77 +91,76 @@
                     <li>Cantonese/ Mandarin: 3.5 / 5</li>
                 </ul>
             </div>
-            
+
         </div>
-<!-----Projects----->
-        <a id = "Projects"></a>
-            <div class = "Portfolio">
-               <h4>
-                   Projects:
-               </h4>
-               <div class = "thumbnail">
-               <figure>
-               <img id = "chatbot_image" src = "http://media.sproutsocial.com/uploads/2016/08/Facebook-Messenger-Bot-01.png">
+        <!-----Projects----->
+        <a id="Projects"></a>
+        <div class="Portfolio">
+            <h4>
+                Projects:
+            </h4>
+            <div class="thumbnail">
+                <figure>
+                    <img id="chatbot_image" src="http://media.sproutsocial.com/uploads/2016/08/Facebook-Messenger-Bot-01.png">
                 </figure>
-                <div class = "Description_1">
+                <div class="Description_1">
                     <h5><a href="m.me/250497208717066" target="_blank">
                         Facebook Messenger chat-bot </a>
-                   </h5>
-                   <h6>Javascript, Node.js, Wit.ai</h6>
-                       <p2>
-                          <div id = "chatbot_description"> Created a chat based ‘therapy’ bot in the form of a text-based game to aid in identifying  depression symptoms by assigning a user’s actions in the game a positive / negative rating with Wit.ai. Users were then given advice to treat those symptoms.
-                          </div>
-                       </p2>
-                 </div>
-               </div>
-               <div class = "thumbnail">
+                    </h5>
+                    <h6>Javascript, Node.js, Wit.ai</h6>
+                    <p2>
+                        <div id="chatbot_description"> Created a chat based ‘therapy’ bot in the form of a text-based game to aid in identifying depression symptoms by assigning a user’s actions in the game a positive / negative rating with Wit.ai. Users were then given advice to treat those symptoms.
+                        </div>
+                    </p2>
+                </div>
+            </div>
+            <div class="thumbnail">
                 <figure>
-                     <img id = "cybersecurity_image" src = "https://www.mozilla.org/media/img/teach/smarton/security/hero-cybersecurity-white-bg.73b13ad71673.png">
+                    <img id="cybersecurity_image" src="https://www.mozilla.org/media/img/teach/smarton/security/hero-cybersecurity-white-bg.73b13ad71673.png">
                 </figure>
-                <div class = "Description_2">
+                <div class="Description_2">
                     <h7> <a href="https://github.com/hwwc518/CS-1122-Projects" target="_blank">
                         Cyber-Security Projects </a>
                     </h7>
                     <br>
                     <h8>
-                        Python 
+                        Python
                     </h8>
                     <br>
                     <p3>
-                        CS 1122(Introduction to Computer Science Final Project). Used various Python modules to 1) Make a Windows tool that would log keystrokes to a '.txt' file. That '.txt' file was then sent over a network to a remote server. 2) Make a tool that would scan a given network to find open ports, then compare those
-                        ports to a dictionary of common ports to predict which one was being used. 3) Make a file recovery program that would use bits of a jpg/ png image's header in order to recover the file. 
+                        CS 1122(Introduction to Computer Science Final Project). Used various Python modules to 1) Make a Windows tool that would log keystrokes to a '.txt' file. That '.txt' file was then sent over a network to a remote server. 2) Make a tool that would scan a given network to find open ports, then compare those ports to a dictionary of common ports to predict which one was being used. 3) Make a file recovery program that would use bits of a jpg/ png image's header in order to recover the file.
                     </p3>
-                  </div>
                 </div>
             </div>
-<!-----Contact----->
-     <a id = "Contact"></a>
-     <div class = "Contact_page">
-         <h9>Contact Me!</h9>
-         <br>
-         <br>
-         <h10>Feel free to send me any questions you may have.</h10>
-         <br>
-         <br>
-        <!-----Contact boxes----->
-         <form id="contact-form" action='/' method="post">
-           <div class="contact-input">
-              <input id="name" class="input" name="name" type="text" value="" size="30" maxlength="30" placeholder=" Name"/>
-           </div>
-           <br>
-           <div class="contact-input">
-              <input id="email" class="input" name="email" type="text" value="" size="30" maxlength="35" placeholder=" Your Email"/>
-           </div>
-           <br>
-           <div class="contact-input">
-              <textarea id="message" class="input" name="message" rows="10" cols="50" placeholder=" Enter your message"></textarea>
-           </div>
+        </div>
+        <!-----Contact----->
+        <a id="Contact"></a>
+        <div class="Contact_page">
+            <h9>Contact Me!</h9>
             <br>
-           <button id="submit_button" onClick="formSent()" type="submit" value="Send">Send</button>
-        </form>	
-      </div>
+            <br>
+            <h10>Feel free to send me any questions you may have.</h10>
+            <br>
+            <br>
+            <!-----Contact boxes----->
+            <form id="contact-form" action='/' method="post">
+                <div class="contact-input">
+                    <input id="name" class="input" name="name" type="text" value="" size="30" maxlength="30" placeholder=" Name" />
+                </div>
+                <br>
+                <div class="contact-input">
+                    <input id="email" class="input" name="email" type="text" value="" size="30" maxlength="35" placeholder=" Your Email" />
+                </div>
+                <br>
+                <div class="contact-input">
+                    <textarea id="message" class="input" name="message" rows="10" cols="50" placeholder=" Enter your message"></textarea>
+                </div>
+                <br>
+                <button id="submit_button" onClick="formSent()" type="submit" value="Send">Send</button>
+            </form>
+        </div>
     </main>
-<!-----Footer----->
+    <!-----Footer----->
     <footer>
         <div id="links">
             <a href="https://github.com/hwwc518" target="_blank" alt="GitHub">
@@ -168,4 +177,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="Javascript/smoothscroll.js"></script>
 </body>
+
 </html>
