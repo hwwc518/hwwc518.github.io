@@ -292,6 +292,33 @@ Copyright 2013, Josh Cope
     a:hover {
         color: white;
     }
+/*  FAB Resume download button*/
+    .fab{
+        width: 60px;
+        height: 60px;
+        border-radius: 40px;
+        background: #f4846e;
+        position: fixed;
+        z-index: 10;
+        bottom: 38px;
+        right: 36px;
+        color: white;
+        overflow: hidden;
+        line-height: 60px;
+        font-size: 26px;
+    }
+    .fab::before {
+        font-family: 'FontAwesome';
+        font-weight: normal;
+        font-style: normal;
+        display: inline-block;
+        text-decoration: inherit;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        line-height: 32px;
+        content: '\f0ed';
+    }
 /*
 =============================================================================
    Page Styles
@@ -311,7 +338,12 @@ Copyright 2013, Josh Cope
 @media only screen and (min-width: 480px) and (max-width: 767px) {}
 
 /* Mobile Portrait Size to Mobile Landscape Size */
-@media only screen and (max-width: 479px) {}
+@media only screen and (max-width: 479px) {
+    .fab{
+        bottom: 40px;
+        right: 40px;
+    }
+}
 
 
 /* =============================================================================
