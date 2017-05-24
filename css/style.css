@@ -120,6 +120,7 @@ Copyright 2013, Josh Cope
         padding-top: 10%;
 /*        background-color: #fcf4ea;*/
         width:99%;
+        vertical-align: top;
     }
     #coder_image{
         width:30%;
@@ -146,6 +147,7 @@ Copyright 2013, Josh Cope
     .Portfolio{
         padding-top: 20%;
         background-color: black;
+        vertical-align: top;
     }
     /*Generic Clearfix*/
 /*
@@ -232,6 +234,7 @@ Copyright 2013, Josh Cope
 /*-----Contact page styles-----*/
     .Contact_page{
 /*        padding-top: 1%;*/
+        vertical-align: top;
     }
     #contact-form{
         padding-left: 5%;
@@ -342,6 +345,35 @@ Copyright 2013, Josh Cope
     .fab{
         bottom: 40px;
         right: 40px;
+    }
+    .burger_nav{
+        display:block;
+        height: 40px;
+        width: 100%;
+        background: url(../photos/ham_menu.png) no-repeat 98% center;
+/*        background-color: black;*/
+        cursor: pointer;
+    }
+    header nav ul{
+        overflow: hidden;
+        background: #505050;
+/*        height:0;*/
+    }
+    header nav ul.open{
+        height: auto;
+    }
+    header nav ul li{
+        display: block;
+/*        float: none;*/
+        text-align: left;
+        width: 100%;
+        margin: 0;
+    }
+    header nav ul li{
+        color: white;
+/*        padding: 10px;*/
+        border-bottom: 1px solid #404040;
+        margin:0;
     }
 }
 
