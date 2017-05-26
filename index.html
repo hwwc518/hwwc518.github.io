@@ -25,6 +25,11 @@
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#efe2d2">
    
+    <!-- Latest compiled and minified CSS -->
+<!--
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+-->
     <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
 
 </head>
@@ -68,7 +73,7 @@
                     Greetings!
                 </h2>
                 <p1>
-                    My name is Hui Wah. I am currently a sophomore CS major at NYU interested in software development. I’m very into in the internet of things and ways in which technology can be infused into normal objects to make them more useful. In my free time, I love traveling, basketball, tinkering with gadgets and exploring new places.
+                    My name is Hui Wah. I am currently a Junior Computer Science major at NYU interested in software development. I am very into in the internet of things and ways in which technology can be infused into normal objects to make them more useful. In my free time, I love traveling, basketball, tinkering with gadgets and exploring new places.
                 </p1>
                 <h3>
                     Skills:
@@ -135,7 +140,8 @@
             <br>
             <br>
             <!-----Contact boxes----->
-            <form id="contact-form" action='/' method="post">
+            <form id="contact-form" action="https://formspree.io/hwwc518@gmail.com"
+      method="POST">
                 <div class="contact-input">
                     <input id="name" class="input" name="name" type="text" value="" size="30" maxlength="30" placeholder=" Name" />
                 </div>
@@ -145,7 +151,7 @@
                 </div>
                 <br>
                 <div class="contact-input">
-                    <textarea id="message" class="input" name="message" rows="10" cols="50" placeholder=" Enter your message"></textarea>
+                    <textarea id="message" class="input" name="message" rows="10" cols="50" placeholder=" Enter your message" value = "Send"></textarea>
                 </div>
                 <br>
                 <button id="submit_button" onClick="formSent()" type="submit" value="Send">Send</button>
