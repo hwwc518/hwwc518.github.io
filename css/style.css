@@ -375,6 +375,16 @@ Copyright 2013, Josh Cope
         border-bottom: 1px solid #404040;
         margin:0;
     }
+    .About-me{
+        padding-left: 20px;
+    }
+    #submit_button{
+        width:20%;
+        height:5%;
+    }
+    .Homepage{
+        padding-top: 90px;
+    }
 }
 
 
