@@ -2,182 +2,42 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Personal_Website</title>
-    <meta name="description" content="Hui Wah Chiang's Personal Website">
-    <meta name="author" content="Hui Wah Chiang">
-    <meta name="viewport" content="width=device-width">
-
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
-
-<!--    Material Design Components--> <!--    <link rel="stylesheet" href="material/material.min.css">--> <!--    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
-<!--    Mobile header colors-->
-    <!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#efe2d2">
-    <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#efe2d2">
-    <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#efe2d2">
-
-    <!-- Latest compiled and minified CSS -->
-<!--
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
--->
-    <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <title>Personal_Website</title>
+  <meta name="description" content="Hui's Personal Website">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="./output.css" rel="stylesheet">
 </head>
 
-<body>
-    <header>
-        <h1>Hui Wah Chiang</h1>
-        <nav>
-           <a class = "burger_nav"></a>
-            <ul>
-                <li><a href="#Home" class="smoothScroll">Home</a></li>
-                <li><a href="#Projects" class="smoothScroll">Portfolio</a></li>
-                <li><a href="#Contact" class="smoothScroll">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <!-----Hero image----->
-        <!--
-        <section class = "hero-image">
-            <div class = "hero-text">
-                <h1>Hui Wah Chiang</h1>
-                <p>Welcome To My Website!</p>
-                <button>LinkedIn</button>
-                <button>Github</button>
-            </div>
-        </section>
-
--->
-        <!-- About Page -->
-        <a id="Home"></a>
-        <div class="Homepage">
-            <div class="img-container">
-                <figure>
-                    <img id="coder_image" src="https://image.flaticon.com/icons/svg/307/307915.svg">
-                </figure>
-            </div>
-            <div class="About-me">
-                <h2>
-                    Greetings!
-                </h2>
-                <p1>
-                    My name is Hui Wah. I am currently a Junior Computer Science major at NYU interested in software development. I am very into in the internet of things and ways in which technology can be infused into normal objects to make them more useful. In my free time, I love traveling, basketball, tinkering with gadgets and exploring new places.
-                </p1>
-                <h3>
-                    Skills:
-                </h3>
-                <ul id="skills_list">
-                    <li>Python: 3 / 5</li>
-                    <li>C++: 3.5 / 5</li> <li>HTML/CSS: 4 / 5</li>
-                    <li>Javascript: 2 / 5</li>
-                    <li>Git/Github: 3 / 5</li>
-                    <li>Photoshop: 3 / 5</li>
-                    <li>Cantonese/ Mandarin: 3.5 / 5</li>
-                </ul>
-            </div>
-
+<body class="bg-custom-orange">
+  <main>
+    <div class="flex justify-center items-center h-screen">
+      <div class="grid grid-cols-5 gap-4 w-full px-10">
+        <div class="col-start-2 col-span-3 text-center">
+          <p class="text-2xl font-bold text-white">
+            Hey, I'm Hui. I'm currently a software engineer at Capital One in New York doing
+            full stack web
+            development. Prior to that, I was at Blue Apron and NYU. At the moment, I'm very
+            interested in developer
+            tooling and DX. If you'd like to chat, just shoot me a message!
+          </p>
         </div>
-        <!-- Projects -->
-        <a id="Projects"></a>
-        <div class="Portfolio">
-            <h4>
-                Projects:
-            </h4>
-            <div class="thumbnail">
-                <figure>
-                    <img id="chatbot_image" src="http://media.sproutsocial.com/uploads/2016/08/Facebook-Messenger-Bot-01.png">
-                </figure>
-                <div class="Description_1">
-                    <h5><a href="m.me/250497208717066" target="_blank">
-                        Facebook Messenger chat-bot </a>
-                    </h5>
-                    <h6>Javascript, Node.js, Wit.ai</h6>
-                    <p2>
-                        <div id="chatbot_description"> Created a chat based ‘therapy’ bot in the form of a text-based game to aid in identifying depression symptoms by assigning a user’s actions in the game a positive / negative rating with Wit.ai. Users were then given advice to treat those symptoms.
-                        </div>
-                    </p2>
-                </div>
-            </div>
-            <div class="thumbnail">
-                <figure>
-                    <img id="cybersecurity_image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH6_C9r4e6vZdAz0EognQOYOF7bl_cD63d8wblTQbTXOT74Qwj">
-                </figure>
-                <div class="Description_2">
-                    <h7> <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH6_C9r4e6vZdAz0EognQOYOF7bl_cD63d8wblTQbTXOT74Qwj" target="_blank">
-                        Cyber-Security Projects </a>
-                    </h7>
-                    <br>
-                    <h8>
-                        Python
-                    </h8>
-                    <br>
-                    <p3>
-                        CS 1122(Introduction to Computer Science Final Project). Used various Python modules to 1) Make a Windows tool that would log keystrokes to a '.txt' file. That '.txt' file was then sent over a network to a remote server. 2) Make a tool that would scan a given network to find open ports, then compare those ports to a dictionary of common ports to predict which one was being used. 3) Make a file recovery program that would use bits of a jpg/ png image's header in order to recover the file.
-                    </p3>
-                </div>
-            </div>
-        </div>
-        <!-- Contact -->
-        <a id="Contact"></a>
-        <div class="Contact_page">
-            <h9>Contact Me!</h9>
-            <br>
-            <br>
-            <h10>Feel free to send me any questions you may have.</h10>
-            <br>
-            <br>
+        <!-- <div class="col-span-2"></div> -->
+      </div>
+    </div>
+  </main>
 
-    <!-----Contact boxes----->
-            <form id="contact-form" action="https://formspree.io/hwwc518@gmail.com"
-      method="POST">
-                <div class="contact-input">
-                    <input id="name" class="input" name="name" type="text" value="" size="30" maxlength="30" placeholder=" Name" />
-                </div>
-                <br>
-                <div class="contact-input">
-                    <input id="email" class="input" name="email" type="text" value="" size="30" maxlength="35" placeholder=" Your Email" />
-                </div>
-                <br>
-                <div class="contact-input">
-                    <textarea id="message" class="input" name="message" rows="10" cols="46'" placeholder=" Enter your message" value = "Send"></textarea>
-                </div>
-                <br>
-                <button id="submit_button" onClick="formSent()" type="submit" value="Send">Send</button>
-            </form>
-        </div>
-    </main>
-
-    <br>
-
-<!-----Footer----->
-    <footer>
-        <div id="links">
-            <a href="https://github.com/hwwc518" target="_blank" alt="GitHub">
-                <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/hui-wah-chiang-156504128" target="_blank" alt="LinkedIn">
-                <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
-            </a>
-        </div>
-    </footer>
-
-<!-- Fixed elements -->
-   <a href="documents/resume.pdf" target="_blank">
-       <div class="fab">Download_resume</div>
-    </a>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="Javascript/smoothscroll.js"></script>
-    <script src = "Javascript/ham_menu.js"></script>
+  <footer class="fixed bottom-0 w-full bg-gray-800 text-white p-4">
+    <div id="links">
+      <a href="https://github.com/hwwc518" target="_blank" alt="GitHub">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/hui-wah-chiang" target="_blank" alt="LinkedIn">
+        <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+      </a>
+    </div>
+  </footer>
 </body>
 
 </html>
